@@ -8,12 +8,12 @@
 <style>
     h1{
         color: brown;
-        margin: 10px;
+        padding: 10px;
         border: solid black 2px;
     }
     h2{
         color: indigo;
-        margin: 10 px;
+        padding: 10px;
         border: dotted 2px; 
     }
 </style>
@@ -24,7 +24,7 @@
         echo " lata";
     }elseif($wiek = 1 ){
         echo " rok";
-    }elseif($wiek = 0 ){
+    }elseif($wiek = 0 or 2 or 3 or 4 or 5 or 6 or 7 or 8 or 9 or 10 or 11 or 12 or 13 or 14 or 15 or 16 or 17 or 18 or 19   ){
         echo " lat";
     }
     ?></h1>
