@@ -18,16 +18,18 @@
     }
 </style>
 <body>
-    <?php   $wiek=rand(0,100)  ?>
-    <h1>     Mam <?php  echo $wiek;
-    if($wiek = 2 or 3 or 4){
-        echo " lata";
-    }elseif($wiek = 1 ){
-        echo " rok";
-    }elseif($wiek = 0 or 2 or 3 or 4 or 5 or 6 or 7 or 8 or 9 or 10 or 11 or 12 or 13 or 14 or 15 or 16 or 17 or 18 or 19   ){
-        echo " lat";
+    <?php
+    $wiek=rand(0,100);
+    
+    if($wiek == 1){
+        $koncowka = " rok";
+    }elseif(in_array($wiek % 10, [2, 3, 4]) && !in_array($wiek % 100, [12, 13, 14])){
+        $koncowka = " lata";
+    }else{
+        $koncowka = " lat";
     }
-    ?></h1>
+    ?>
+    <h1> Mam <?php  echo $wiek." ".$koncowka;?>
 
 <h2> <?php if($wiek < 18){
         echo "Jeszcze nie możesz glosowac";
@@ -35,7 +37,6 @@
         echo "Mozesz tylko głosowac";
     }elseif($wiek < 30){
         echo "Możesz tylko głosować i kandydatować do Sejmu";
-
     }elseif($wiek < 35){
         echo "Możesz tylko głosować i kandydatować do Sejmu i Senatu";
     }elseif($wiek >= 35){
