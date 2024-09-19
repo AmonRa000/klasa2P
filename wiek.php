@@ -19,7 +19,15 @@
 </style>
 <body>
     <?php   $wiek=rand(0,100)  ?>
-    <h1>     Mam <?= $wiek; ?> lat </h1>
+    <h1>     Mam <?php  echo $wiek;
+    if($wiek = 2 or 3 or 4){
+        echo " lata";
+    }elseif($wiek = 1 ){
+        echo " rok";
+    }elseif($wiek = 0 ){
+        echo " lat";
+    }
+    ?></h1>
 
 <h2> <?php if($wiek < 18){
         echo "Jeszcze nie możesz glosowac";
