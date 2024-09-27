@@ -27,7 +27,7 @@
     ?>
     <?= "raz "."dwa <br>"; ?>
     <?= "trzy "."cztery <br>";?>
-<?=
+<?php
 #4.
 #komentarz jednoliniowy
 //drugi komentarz jednoliniowy
