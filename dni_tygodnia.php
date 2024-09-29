@@ -6,24 +6,29 @@
     <title>Document</title>
 </head>
 <style>
-    tr
+    table{
+        border-collapse: collapse;
+    }
     td{
-        background-color: lightblue;
+        border: solid 2px; 
+        padding: 20px;
+        text-align: center;
+    }
+    td:nth-child(even){
+        background-color: cyan; 
     }
 </style>
 <body>
     <table>
         <tr>
-    <?php
-    $dni = ['pon ','wto ','śro ','czw ','pią ','sob ','nie '];
-    foreach ($dni as $element) {
-        ?>
-        <td>
-        <?= $element;
-    }
-        ?>
-        </td> 
-    
+        <?php
+        $dni = ['pon ','wto ','śro ','czw ','pią ','sob ','nie '];
+        foreach ($dni as $element) {
+                ?>
+                <td>
+                <?= $element; ?>
+                </td>
+            <?php }?>
         </tr>
     </table>
 </body>
