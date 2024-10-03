@@ -1,46 +1,57 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tabliczka mnożenia</title>
-    <style>
-        table { border-collapse: collapse; font-family: Verdana; font-size: large; border: 1px solid black; }
-        th, td { border: 1px solid black; padding: 5px; text-align: center; vertical-align: middle; }
-        th { background-color: burlywood; }
-        th:first-child { background-color: beige; }
-        td { background-color: bisque; }
-        .prime { background-color: orange; }
-        .composite { background-color: white; }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabliczka Mnożenia</title>
 </head>
+<style>
+    table{
+        border: 1px solid black;
+        font-family: Verdana;
+        font-size: large;
+        border-collapse: collapse;
+    }
+    th,tr{
+        border: 1px dashed black;
+        padding: 5px;
+        background-color: burlywood;
+    }
+    td{
+        border: 1px dashed black;
+        background-color: beige;
+        padding: 5px;
+        text-align: center;
+    }
+    tr:nth-child(1) td:nth-child(1),
+    tr:nth-child(2) td:nth-child(2),
+    tr:nth-child(3) td:nth-child(3),
+    tr:nth-child(4) td:nth-child(4),
+    tr:nth-child(5) td:nth-child(5),
+    tr:nth-child(6) td:nth-child(6),
+    tr:nth-child(7) td:nth-child(7),
+    tr:nth-child(8) td:nth-child(8),
+    tr:nth-child(9) td:nth-child(9),
+    tr:nth-child(10) td:nth-child(10),
+    tr:nth-child(11) td:nth-child(11) {
+    background-color: bisque;
+    }
+</style>
 <body>
     <table>
-        <tr>
-            <th></th>
-            <?php for ($i = 1; $i <= 10; $i++): ?>
-                <th><?php echo $i; ?></th>
-            <?php endfor; ?>
-        </tr>
-        <?php
-        function is_prime($num) {
-            if ($num < 2) return false;
-            for ($i = 2; $i <= sqrt($num); $i++) {
-                if ($num % $i == 0) return false;
-            }
-            return true;
+        <caption>Tabliczka mnożenia</caption>
+    <?php
+        echo "<th>"."× "."</th>";
+        for($i=1;$i<=10;$i++){
+            echo "<th>".$i."</th>";
         }
-
-        for ($i = 1; $i <= 10; $i++): ?>
-            <tr>
-                <th><?php echo $i; ?></th>
-                <?php for ($j = 1; $j <= 10; $j++): 
-                    $product = $i * $j;
-                    $class = is_prime($product) ? 'prime' : 'composite';
-                ?>
-                    <td class="<?php echo $class; ?>"><?php echo $product; ?></td>
-                <?php endfor; ?>
-            </tr>
-        <?php endfor; ?>
+        for($j=1;$j<=10;$j++){
+            echo "<tr><th>".$j."</th</tr>";
+            for($a=1;$a<=10;$a++){
+                echo "<td>".$a*$j."</td>";
+            }
+        }
+    ?>
     </table>
 </body>
 </html>
