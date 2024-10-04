@@ -23,7 +23,6 @@
         padding: 5px;
         text-align: center;
     }
-    tr:nth-child(1) td:nth-child(1),
     tr:nth-child(2) td:nth-child(2),
     tr:nth-child(3) td:nth-child(3),
     tr:nth-child(4) td:nth-child(4),
