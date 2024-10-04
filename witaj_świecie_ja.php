@@ -8,7 +8,7 @@
 </head>
 <style>
     table{
-        border-collapse:collapse;
+        border-collapse: collapse;
     }
     td{
         border: 3px dotted red;
@@ -19,13 +19,13 @@
     <table>
         <tr>
         <?php
-            $str="Kon'nichiwa sekai";
-            $tab = str_split($str);
-            foreach($tab as $elementy){
-            echo "<td>".$elementy."<td>";
+            $zdanie = "Kon'nichiwa sekai";
+            $slowo = str_split($zdanie,);
+            foreach($slowo as $litery){
+                echo "<td>".$litery."</td>";
             }
         ?>
-    </tr>
+        </tr>
     </table>
 </body>
 </html>
