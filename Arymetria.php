@@ -54,21 +54,21 @@ class Arytmetyka{
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Arytmetyka</title>
 </head>
 <body>
 <?php
 $obiekt = new Arytmetyka();
-$obiekt->liczbaA = 9;
+$obiekt->liczbaA = 3;
 $obiekt->liczbaB = 0;
 ?>
 <ol style="list-style-type:circle">
-<li>Suma liczb <b><?=$obiekt->liczbaA?></b> i <b><?=$obiekt->liczbaB?></b> jest równa <b><?=$obiekt->suma()?></b></li>
-<li>Różnica liczb <b><?=$obiekt->liczbaA?></b> i <b><?=$obiekt->liczbaB?></b> jest równa <b><?=$obiekt->roznica()?></b></li>
-<li>Iloczyn liczb <b><?=$obiekt->liczbaA?></b> i <b><?=$obiekt->liczbaB?></b> jest równy <b><?=$obiekt->iloczyn()?></b></li>
-<li>Iloraz liczb <b><?=$obiekt->liczbaA?></b> i <b><?=$obiekt->liczbaB?></b> wynosi <b><?=$obiekt->iloraz()?></b></li>
-<li>Reszta z dzelenia liczb <b><?=$obiekt->liczbaA?></b> przez <b><?=$obiekt->liczbaB?></b> jest równa <b><?=$obiekt->reszta()?></b></li>
-<li>Liczba <b><?=$obiekt->liczbaA?></b> do potęgi <b><?=$obiekt->liczbaB?></b> jest równa <b><?=$obiekt->potega()?></b></li>
+<li>Suma liczb <strong><?=$obiekt->liczbaA?></strong> i <strong><?=$obiekt->liczbaB?></strong> jest równa <strong><?=$obiekt->suma()?></strong></li>
+<li>Różnica liczb <strong><?=$obiekt->liczbaA?></strong> i <strong><?=$obiekt->liczbaB?></strong> jest równa <strong><?=$obiekt->roznica()?></strong></li>
+<li>Iloczyn liczb <strong><?=$obiekt->liczbaA?></strong> i <strong><?=$obiekt->liczbaB?></strong> jest równy <strong><?=$obiekt->iloczyn()?></strong></li>
+<li>Iloraz liczb <strong><?=$obiekt->liczbaA?></strong> i <strong><?=$obiekt->liczbaB?></strong> wynosi <strong><?=$obiekt->iloraz()?></strong></li>
+<li>Reszta z dzelenia liczb <strong><?=$obiekt->liczbaA?></strong> przez <strong><?=$obiekt->liczbaB?></strong> jest równa <strong><?=$obiekt->reszta()?></strong></li>
+<li>Liczba <strong><?=$obiekt->liczbaA?></strong> do potęgi <strong><?=$obiekt->liczbaB?></strong> jest równa <strong><?=$obiekt->potega()?></strong></li>
 </ol>
 
 
