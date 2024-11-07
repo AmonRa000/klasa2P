@@ -7,45 +7,45 @@ class Arytmetyka{
         if(is_numeric($this->liczbaA) && is_numeric($this->liczbaB)){
             return $this->liczbaA+$this->liczbaB;
         }
-        return null;
+        return;
     }
     public function roznica(){
         if(is_numeric($this->liczbaA) && is_numeric($this->liczbaB)){
             return $this->liczbaA-$this->liczbaB;
         }
-        return null;
+        return;
     }
     public function iloczyn(){
         if(is_numeric($this->liczbaA) && is_numeric($this->liczbaB)){
             return $this->liczbaA*$this->liczbaB;
         }
-        return null;
+        return;
     }
     public function iloraz(){
         if(is_numeric($this->liczbaA) && is_numeric($this->liczbaB)){
             if($this->liczbaB!=0){
                 return $this->liczbaA/$this->liczbaB;
             }else{
-                echo "Błąd";
+                return null;
             }
         }
-        return null;
+        return;
     }
     public function reszta(){
         if(is_numeric($this->liczbaA) && is_numeric($this->liczbaB)){
             if($this->liczbaB!=0){
                 return $this->liczbaA%$this->liczbaB;
             }else{
-                echo "Błąd";
+                return null;
             }
         }
-        return null;
+        return;
     }
     public function potega(){
         if(is_numeric($this->liczbaA) && is_numeric($this->liczbaB)){
            return $this->liczbaA**$this->liczbaB;
         }
-        return null;
+        return;
     }
 };
 ?>
