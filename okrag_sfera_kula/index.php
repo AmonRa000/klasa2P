@@ -6,7 +6,7 @@ include_once 'okrag_sfera_kula.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Okrag_Sfera_Kula</title>
 </head>
 <style>
     body{
@@ -35,7 +35,7 @@ $obiekt = new okragStrefaKula($rand = rand(0,99))
     <table>
         <tr><td colspan="3">Promien kuli: r = <?=$rand ?></tr>
         <tr><td>Obwód</td><td>Pole powierzchni</td><td>Objętość</td></tr>
-        <tr><td>L = 2πr</td><td>p = 4πr<sup>2</sup></td><td>V = &frac13;πr<sup>3</sup> </td></tr>
+        <tr><td>L = 2πr</td><td>p = 4πr<sup>2</sup></td><td>V = &frac13;∙πr<sup>3</sup> </td></tr>
         <tr><td><?=$obiekt->obwod($rand)?></td><td><?=$obiekt->pole($rand)?></td><td><?=$obiekt->objentosc($rand)?></td></tr>
     </table>
     
