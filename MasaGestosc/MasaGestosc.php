@@ -12,7 +12,7 @@ class MasaGestosc{
     private function obliczObjetosc(): float{
         return (4 / 3) * pi() * pow($this->promien, 3);
     }
-    
+
     public function obliczMase(): float{
         switch ($this->substancja){
             case 'gips':
