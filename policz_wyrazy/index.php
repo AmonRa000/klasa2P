@@ -18,6 +18,6 @@ Ile cię trzeba cenić, ten tylko się dowie,
 Kto cię stracił. Dziś piękność twą w całej ozdobie
 Widzę i opisuję, bo tęsknię po tobie.</pre>
     </fieldset>
-    <p>Tekst w ramce składa się z <?=PoliczWyrazy::policzWyrazy("Litwo, Ojczyzno moja! ty jesteś jak zdrowie; Ile cię trzeba cenić, ten tylko się dowie, Kto cię stracił. Dziś piękność twą w całej ozdobie Widzę i opisuję, bo tęsknię po tobie.")?>wyrazów</p>
+    <p>Tekst w ramce składa się z <?=PoliczWyrazy::policzWyrazy("Litwo, Ojczyzno moja! ty jesteś jak zdrowie; Ile cię trzeba cenić, ten tylko się dowie, Kto cię stracił. Dziś piękność twą w całej ozdobie Widzę i opisuję, bo tęsknię po tobie.")?> wyrazów</p>
 </body>
 </html>
