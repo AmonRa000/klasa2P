@@ -1,7 +1,7 @@
 <?php
 class Arytmetyka{
     public float $liczbaA; 
-    public float $liczbaB; 
+    public float $liczbaB;
 
     public function suma(){
         if(is_numeric($this->liczbaA) && is_numeric($this->liczbaB)){
