@@ -29,7 +29,7 @@
     </form>
         <?php
         if(!empty($_POST["litera"])){
-            $wybrane =$_POST["litera"];
+            $wybrane=$_POST["litera"];
             if(count($wybrane)==1){
                 ?>
                 <p>
@@ -50,11 +50,6 @@
             </p>
             <?php
         }
-        
-
-
-
-
         ?>
     </fieldset>
 </body>
