@@ -7,32 +7,65 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
 </head>
+<style>
+    h1{
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+    form{
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+    background-color: #fafafa;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    }
+    input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #5b9bd5;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    }
+    p.error{
+        color: red;
+        font-family: Arial, sans-serif;
+        text-align: center; 
+    }
+    p.success{
+        color: green;
+        font-family: Arial, sans-serif;
+        text-align: center; 
+    }
+</style>
 <body>
     <?php include 'menu.php'; ?>
     <h1>Strona logowania</h1>
     <?php
-        if($_SERVER["REQUEST_METHOD"] === "POST")
-        {
-            if(isset($_POST["wyloguj"]))
-            {
+        if($_SERVER["REQUEST_METHOD"] === "POST"){
+            if(isset($_POST["wyloguj"])){
                 $_SESSION["login_status"] = false;
                 session_destroy();
             }
 
             if(isset($_POST["zaloguj"]))
             {
-                if($_POST['login'] === 'admin' && $_POST['pass'] == 'admin' )
-                {
-                    echo "<p>Udane logowanie</p>";
+                if($_POST['login'] === 'admin' && $_POST['pass'] == 'admin'){
+                    echo "<p class='success'>Udane logowanie</p>";
                     $_SESSION["login_status"] = true;
                     $_SESSION['login'] = $_POST['login'];
                     $_SESSION['pass'] = $_POST['pass'];
                 }
-                else
-                {
-                    echo "<p>Dane logowania są niepoprawne</p>";
+                else{
+                    echo "<p class='error'>Dane logowania są niepoprawne</p>";
                 }
             }
         } 
@@ -44,27 +77,26 @@ session_start();
             <p>
                 Jesteś zalogowany jako <?=$_SESSION['login']?>
             </p>
-        <p>
-            <input type="submit" name="wyloguj" value="Wyloguj się">
-        </p>      
+            <p>
+                <input type="submit" name="wyloguj" value="Wyloguj się">
+            </p>      
     <?php
         }else{
-            ?>
-    <p>
-        <label for="imie">Podaj login</label><br>
-        <input type="text" name="login" id="imie">
-    </p>
-    <p>
-        <label for="has">Podaj hasło</label><br>
-        <input type="password" name="pass" id="has">
-    </p>
-    <p>
-        <input type="submit" name="zaloguj" value="Zaloguj się">
-    </p>
-    </form>
+    ?>
+        <p>
+            <label for="imie">Podaj login</label><br>
+            <input type="text" name="login" id="imie">
+        </p>
+        <p>
+            <label for="has">Podaj hasło</label><br>
+            <input type="password" name="pass" id="has">
+        </p>
+        <p>
+            <input type="submit" name="zaloguj" value="Zaloguj się">
+        </p>
+        </form>
     <?php
         }
-        include 'stopka.php';
-    ?>
+        include 'stopka.php'; ?>
 </body>
 </html>

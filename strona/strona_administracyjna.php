@@ -9,6 +9,12 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strona administracyjna</title>
 </head>
+<style>
+    h1,p{
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+</style>
 <body>
 <?php include 'menu.php'; ?>
 <h1>Panel administracyjny</h1>
