@@ -8,8 +8,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["Ustaw"]) && $_SESSION[
     $czas_ciastka = $_POST['czas_ciastka'];
 
     setcookie($nazwa_ciastka, $zawartosc, time() + $czas_ciastka);
-    header("Location: " . $_SERVER['PHP_SELF']);
-    exit();
+    header($_SERVER['PHP_SELF']);
 }
 ?>
 <!DOCTYPE html>
