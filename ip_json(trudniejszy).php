@@ -19,9 +19,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST["adres"])) {
     <form method="POST">
         <p>Sprawdź przybliżoną lokalizacje adresu IP v.4</p>
         <label for="adres">http://ip-api.com/json/</label>
-            <select name="" id="">
-                <option value="1.1.1.1"></option>
-            <input type="text" id="adres" name="adres" required>
+            <select name="adres" id="adres">
+                <option value="" selected></option>
+                <option value="1.1.1.1">1.1.1.1</option>
+                <option value="2.2.2.2">2.2.2.2</option>
+                <option value="3.3.3.3">3.3.3.3</option>
+                <option value="4.4.4.4">4.4.4.4</option>
+                <option value="5.5.5.5">5.5.5.5</option>
+                <option value="6.6.6.6">6.6.6.6</option>
+                <option value="7.7.7.7">7.7.7.7</option>
+                <option value="8.8.8.8">8.8.8.8</option>
+                <option value="9.9.9.9">9.9.9.9</option>
+                <option value="10.10.10.10">10.10.10.10</option>
             <input type="submit" value="Sprawdź IP">
             </select>
     </form>

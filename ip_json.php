@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST["adres"])) {
     <form method="POST">
         <p>Sprawdź przybliżoną lokalizacje adresu IP v.4</p>
         <label for="adres">http://ip-api.com/json/</label>
-        <input type="text" id="adres" name="adres" required>
+        <input type="text" id="adres" name="adres" value="<?= isset($_POST['adres']) ? $_POST['adres'] : "" ?>" required>
         <input type="submit" value="Sprawdź IP">
     </form>
     
