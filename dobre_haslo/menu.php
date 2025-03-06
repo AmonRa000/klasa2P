@@ -7,40 +7,40 @@
         width: 100%;
     }
     a.main{
-    position: relative;
-    top:20px;
-    left: 36%;
-    margin: 10px auto;
-    padding: 10px;
-    padding-inline: 40px;
-    border-radius: 30px;
-    background-color: #fafafa;
-    font-family: Arial, sans-serif;
-    text-align: center;
+        position: relative;
+        top:20px;
+        left: 36%;
+        margin: 10px auto;
+        padding: 10px;
+        padding-inline: 40px;
+        border-radius: 30px;
+        background-color: #fafafa;
+        font-family: Arial, sans-serif;
+        text-align: center;
     }
     a.login{
-    position: relative;
-    top:20px;
-    left: 36%;
-    margin: 10px auto;
-    padding: 10px;
-    padding-inline: 40px;
-    border-radius: 30px;
-    background-color: #fafafa;
-    font-family: Arial, sans-serif;
-    text-align: center;
+        position: relative;
+        top:20px;
+        left: 36%;
+        margin: 10px auto;
+        padding: 10px;
+        padding-inline: 40px;
+        border-radius: 30px;
+        background-color: #fafafa;
+        font-family: Arial, sans-serif;
+        text-align: center;
     }
     a.panel{
-    position: relative;
-    top:20px;
-    left: 36%;
-    margin: 10px auto;
-    padding: 10px;
-    padding-inline: 40px;
-    border-radius: 30px;
-    background-color: #fafafa;
-    font-family: Arial, sans-serif;
-    text-align: center;
+        position: relative;
+        top:20px;
+        left: 36%;
+        margin: 10px auto;
+        padding: 10px;
+        padding-inline: 40px;
+        border-radius: 30px;
+        background-color: #fafafa;
+        font-family: Arial, sans-serif;
+        text-align: center;
     }
 </style>
 <div>

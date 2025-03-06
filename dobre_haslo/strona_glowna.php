@@ -1,5 +1,9 @@
 <?php
 session_start();
+
+if(!isset($_COOKIE["good_password_definition"])) {
+    unset($_SESSION["zawartosc"]);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,28 +14,30 @@ session_start();
     <title>Strona główna</title>
 </head>
 <style>
-    h1,p{
+    h1, p {
         text-align: center;
         font-family: Arial, sans-serif;
+    }
+    p.ciastko{
+        text-align: left;
+        font-size: medium;
     }
 </style>
 <body>
 <?php include 'menu.php'; ?>
-<h1>Moja Strona</h1>
-<h3>Jakie powinno być dobre hasło?</h3>
-<p>
+<h1>Strona Główna</h1>
+<h2>Jakie powinno być dobre hasło?</h2>
+
+<p class="ciastko">
     <?php 
-    if(isset($_SESSION["login_status"]) != false){
-        echo $_SESSION['zawartosc'];
-    }
-    if(isset($_SESSION["login_status"]) != false){
-        echo "Witaj ".$_SESSION['login'];
+    if(isset($_SESSION["zawartosc"])) {
+        echo $_SESSION["zawartosc"];
     }else{
-        echo "Witaj gościu";
+        echo "Ciasteczko nie jest ustawione.";
     }
     ?>
-    </p>
-<?php include 'stopka.php'; ?>
+</p>
 
+<?php include 'stopka.php'; ?>
 </body>
 </html>

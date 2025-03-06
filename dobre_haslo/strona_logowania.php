@@ -15,25 +15,25 @@ session_start();
         font-family: Arial, sans-serif;
     }
     form{
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 30px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
-    background-color: #fafafa;
-    font-family: Arial, sans-serif;
-    text-align: center;
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+        background-color: #fafafa;
+        font-family: Arial, sans-serif;
+        text-align: center;
     }
     input[type="submit"] {
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 20px;
-    background-color: #5b9bd5;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 20px;
+        background-color: #5b9bd5;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
     }
     p.error{
         color: red;
