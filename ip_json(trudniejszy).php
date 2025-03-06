@@ -19,18 +19,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST["adres"])) {
     <form method="POST">
         <p>Sprawdź przybliżoną lokalizacje adresu IP v.4</p>
         <label for="adres">http://ip-api.com/json/</label>
-        <input type="text" id="adres" name="adres" required>
-        <input type="submit" value="Sprawdź IP">
+            <select name="" id="">
+                <option value="1.1.1.1"></option>
+            <input type="text" id="adres" name="adres" required>
+            <input type="submit" value="Sprawdź IP">
+            </select>
     </form>
     
     <?php if (isset($json)): ?>
         <fieldset>
             <legend>Zwrócone dane (JSON):</legend>
-            <pre><?= htmlspecialchars($json); ?></pre>
+        <pre><?= htmlspecialchars($json); ?></pre>
         </fieldset>
         <fieldset>
             <legend>Zwrócone dane (array)</legend>
-            <pre><?= print_r($dane); ?></pre>
+        <pre><?= print_r($dane); ?></pre>
         </fieldset>
     <?php endif; ?>
 </body>
