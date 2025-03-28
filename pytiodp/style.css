@@ -1,0 +1,49 @@
+button{
+    position: relative;
+    top: 10px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+}
+
+input[type="radio"],h1,h3,p,a{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+label,p,a{
+    font-size: larger;
+}
+.dobra{
+    color: greenyellow;
+}
+.zle{
+    color: red;
+}
+div{
+    text-align: center;
+}
+div.container{
+    position: relative;
+    min-width: 400px;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.6);
+    background-color: #fafafa;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+form{
+    position: relative;
+    min-width: 600px;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.6);
+    background-color: #fafafa;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+

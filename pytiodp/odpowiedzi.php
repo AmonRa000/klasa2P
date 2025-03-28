@@ -1,9 +1,11 @@
+
 <?php session_start()?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Odpowiedź</title>
 </head>
 <body>
@@ -20,19 +22,19 @@
         <p>
             <?php 
             if($_POST['user_answer'] == $_SESSION['correct_answer']){
-                echo "<p class=dobre>Poprawna odpowiedź"; 
+                echo "<p class=dobra>Poprawna odpowiedź</p>";
+                echo "<a href=pytania.php>Kolejne pytanie</a>";
             }else{
                 echo "<p class=zle>Niepoprawna odpowiedź</p>";
-                echo "<p class=zle>Poprawna odpowiedź to: {$_SESSION['correct_answer']}";
+                echo "<p class=zle>Poprawna odpowiedź to: {$_SESSION['correct_answer']}</p>";
+                echo "<a href=pytania.php>Kolejne pytanie</a>";
             }
             ?>
         </p>
     <?php
         }
     ?>
-        <a href="pytania.php">Kolejne pytanie</a>
         </div>
     </div>
-<?php session_destroy();?>
 </body>
 </html>

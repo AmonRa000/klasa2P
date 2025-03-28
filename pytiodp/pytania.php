@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Quiz</title>
 </head>
 <body>
@@ -28,16 +29,19 @@
             }
         }
     ?>
+    <div>
     <form action="odpowiedzi.php" method="post">
         <h1>Prosty Quiz z OpenTDB</h1>
-        <h3>pytanie:<?=$question?></h3>
+        <h3>pytanie: <?=$question?></h3>
 
         <?php foreach($answers as $answer){ ?>
             <input type="radio" name="user_answer" id="user_answer_"<?=$answer?> value="<?=htmlspecialchars($answer) ?? ''?>" required>
             <label for="user_answer_<?=$answer?>"><?=$answer?></label>
         <?php } ?>
-        
+        <br>
         <button type="submit">Sprawdź</button>
     </form>
+    <?php include 'odpowiedzi.php';?>
+    </div>
 </body>
 </html>
