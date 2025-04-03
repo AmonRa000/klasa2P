@@ -1,3 +1,7 @@
+img{
+    height: 300px;
+    width: 300px;
+}
 button{
     position: relative;
     top: 10px;
@@ -14,7 +18,7 @@ label,p,a{
     font-size: larger;
 }
 .dobra{
-    color: greenyellow;
+    color: green;
 }
 .zle{
     color: red;
@@ -29,7 +33,7 @@ div.container{
     margin: 20px auto;
     padding: 20px;
     border-radius: 30px;
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
     background-color: #fafafa;
     font-family: Arial, sans-serif;
     text-align: center;

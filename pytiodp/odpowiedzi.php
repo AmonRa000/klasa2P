@@ -1,4 +1,3 @@
-
 <?php session_start()?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,14 +18,17 @@
         <p>Kategoria <?= $_SESSION['category']?></p>
         <p>Pytanie: <?=$_SESSION['question']?></p>
         <p>Wybrałeś: <?=$_POST['user_answer']?></p>
+        
         <p>
             <?php 
             if($_POST['user_answer'] == $_SESSION['correct_answer']){
                 echo "<p class=dobra>Poprawna odpowiedź</p>";
+                echo "<img src=buzka2 alt=emotka><br>";
                 echo "<a href=pytania.php>Kolejne pytanie</a>";
             }else{
                 echo "<p class=zle>Niepoprawna odpowiedź</p>";
                 echo "<p class=zle>Poprawna odpowiedź to: {$_SESSION['correct_answer']}</p>";
+                echo "<img src=zla_buzka alt=emotka><br>";
                 echo "<a href=pytania.php>Kolejne pytanie</a>";
             }
             ?>
