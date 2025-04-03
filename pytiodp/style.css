@@ -1,3 +1,7 @@
+img{
+    height: 300px;
+    width: 300px;
+}
 button{
     position: relative;
     top: 10px;
@@ -14,7 +18,7 @@ label,p,a{
     font-size: larger;
 }
 .dobra{
-    color: greenyellow;
+    color: green;
 }
 .zle{
     color: red;

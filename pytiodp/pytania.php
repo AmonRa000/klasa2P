@@ -9,11 +9,10 @@
 </head>
 <body>
     <?php
-        $url  = 'https://opentdb.com/api.php?amount=1&category=18&type=multiple';
-        $json = file_get_contents($url);
-        
-        if($json){
-            $data = json_decode($json,true);
+        $response='{"response_code":0,"results":[{"type":"multiple","difficulty":"medium","category":"Science: Mathematics","question":"Which of the following dice is not a platonic solid?","correct_answer":"10-sided die","incorrect_answers":["12-sided die","20-sided die","8-sided die"]}]}';
+
+        //if($json){
+            $data = json_decode($response,true);
             if($data['response_code'] == 0){
                 $difficulty = $data['results'][0]['difficulty'];
                 $category = $data['results'][0]['category'];
@@ -27,7 +26,7 @@
                 $_SESSION['question'] = $question;
                 $_SESSION['correct_answer'] = $correctAnswer;
             }
-        }
+        //}
     ?>
     <div>
     <form action="odpowiedzi.php" method="post">
@@ -41,7 +40,6 @@
         <br>
         <button type="submit">Sprawdź</button>
     </form>
-    <?php include 'odpowiedzi.php';?>
     </div>
 </body>
 </html>
