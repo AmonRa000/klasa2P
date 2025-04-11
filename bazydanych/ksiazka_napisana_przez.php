@@ -13,13 +13,22 @@ $host = "localhost";
 $user = "borowy";
 $password = "qwerty"; 
 
-
 try{
     $conn = mysqli_connect($host, $user, $password, $db);
-}
-catch(mysqli_sql_exception){
+    echo "połączono z bazą";
+}catch(mysqli_sql_exception){
     echo "wystąpił błąd";
 }
+
+$query = "SELECT Tytul, Imie, Nazwisko FROM ksiazki";
+if($result = mysqli_query($conn, $query)){
+    while($row = mysqli_fetch_row($result)){
+        ?><p>Książka <?=$row['Tytul']?> została napisana przez<?=$row['imie'].$row['nazwisko']?></p><?php
+    }
+}
+
+
+
 ?>
 </body>
 </html>
