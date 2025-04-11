@@ -20,15 +20,23 @@ try{
     echo "wystąpił błąd";
 }
 
-$query = "SELECT Tytul, Imie, Nazwisko FROM ksiazki";
-if($result = mysqli_query($conn, $query)){
+$query = "SELECT ksaizki.tytul, ksiazki.imie, ksiazki.nazwisko FROM ksiazki";
+$result = mysqli_query($conn, $query);
+
+if(mysql_num_rows($result) > 0){
+    ?>
+    <h1>Wynik</h1>
+    <?php
     while($row = mysqli_fetch_row($result)){
-        ?><p>Książka <?=$row['Tytul']?> została napisana przez<?=$row['imie'].$row['nazwisko']?></p><?php
+        ?>
+        <p>Książka <i><?=$row['tytul']?></i> została napisana przez <strong><?=$row['imie']?> <?=$row['nazwisko']?></strong></p>
+        <?php
+    
     }
 }
 
 
-
+$conn->close();
 ?>
 </body>
 </html>
