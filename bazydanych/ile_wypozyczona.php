@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ksiazki</title>
 </head>
+<style>
+    table,td,tr,th{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
 <body>
 <?php
 $db = "borowy";
@@ -20,17 +26,42 @@ try{
     echo "wystąpił błąd";
 }
 
-$query = "SELECT wypozyczenia.numer_transakcji, wypozyczenia.Data_wypozyczenia,  IFNULL(wypozyczenia.Data_zwrotu, DATEDIFF(IFNULL(Data_zwrotu,NOW()),Data_wypozyczenia) AS Dni FROM wypozyczenia ORDER BY Dni ASC";
+$query = "SELECT wypozyczenia.Nr_transakcji, wypozyczenia.Data_wypozyczenia, wypozyczenia.Data_zwrotu, DATEDIFF(IFNULL(Data_zwrotu,NOW()),Data_wypozyczenia) AS DNI FROM wypozyczenia ORDER BY DNI ASC";
 $result = mysqli_query($conn, $query);
+?>
+<table>
+    <tr>
+            <th>
+                Nr_transakcji
+            </th>
+            <th>
+                Data_wypozyczenia
+            </th>
+            <th>
+                Data_zwrócenia
+            </th>
+            <th>
+                Liczba dni
+            </th>
+    </tr>
+    <?php
+    if(mysqli_num_rows($result) > 0){
+        while($row = mysqli_fetch_assoc($result)){
+            ?>
+            <tr>
+                <td><?=$row['Nr_transakcji']?></td>
+                <td><?=$row['Data_wypozyczenia']?></td>
+                <td><?=$row['Data_zwrotu']?></td>
+                <td><?=$row['DNI']?></td>
+            </tr>
+            <?php
+        }   
+    }  
+    ?>
+</table>
+ 
 
-if(mysqli_num_rows($result) > 0){
-
-    while($row = mysqli_fetch_assoc($result)){
-
-    }   
-}   
-
-
+<?php
 $conn->close();
 ?>
 </body>
