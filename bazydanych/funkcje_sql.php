@@ -20,19 +20,21 @@ try{
     echo "wystąpił błąd";
 }
 
-$query = "SELECT ksiazki.tytul, ksiazki.imie, ksiazki.nazwisko FROM ksiazki";
+$query = "SELECT UPPER(CONCAT(imie, ' ',nazwisko)) as Pracownik FROM pracownicy";
 $result = mysqli_query($conn, $query);
 
 if(mysqli_num_rows($result) > 0){
     ?>
-    <h1>Wynik</h1>
+    <ul>
     <?php
     while($row = mysqli_fetch_assoc($result)){
         ?>
-        <p>Książka <i>"<?=$row['tytul']?>"</i> została napisana przez <strong><?=$row['imie']?> <?=$row['nazwisko']?></strong></p>
+        <li><?=$row['Pracownik']?></li>
         <?php
-    
     }   
+    ?>
+    </ul>
+    <?php
 }   
 
 

@@ -20,18 +20,13 @@ try{
     echo "wystąpił błąd";
 }
 
-$query = "SELECT ksiazki.tytul, ksiazki.imie, ksiazki.nazwisko FROM ksiazki";
+$query = "SELECT wypozyczenia.numer_transakcji, wypozyczenia.Data_wypozyczenia,  IFNULL(wypozyczenia.Data_zwrotu, DATEDIFF(IFNULL(Data_zwrotu,NOW()),Data_wypozyczenia) AS Dni FROM wypozyczenia ORDER BY Dni ASC";
 $result = mysqli_query($conn, $query);
 
 if(mysqli_num_rows($result) > 0){
-    ?>
-    <h1>Wynik</h1>
-    <?php
+
     while($row = mysqli_fetch_assoc($result)){
-        ?>
-        <p>Książka <i>"<?=$row['tytul']?>"</i> została napisana przez <strong><?=$row['imie']?> <?=$row['nazwisko']?></strong></p>
-        <?php
-    
+
     }   
 }   
 
