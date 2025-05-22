@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ksiazki</title>
 </head>
+<style>
+    table,td,tr,th{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
 <body>
 <?php
 $db = "borowy";
@@ -19,19 +25,43 @@ try{
 }catch(mysqli_sql_exception){
     echo "wystąpił błąd";
 }
-//dokończ
-$query = "SELECT ksiazki.Sygnatura, ksiazki.Tytul, ksiazki.Imie, ksiazki.Nazwisko, ksiazki.Wydawnictwo, ksiazki.Rok_wyd, ksiazki.Cena FROM Ksiazki WHERE ksiazki.Wydawnictwo = "PWN" or ksiazki.Wydawnictwo="Helion" AND ksiazki.Rok_wyd=BETWEEN";
+
+$query = "SELECT wypozyczenia.Nr_transakcji, wypozyczenia.Data_wypozyczenia, wypozyczenia.Data_zwrotu, DATEDIFF(IFNULL(Data_zwrotu,NOW()),Data_wypozyczenia) AS DNI FROM wypozyczenia ORDER BY DNI ASC";
 $result = mysqli_query($conn, $query);
-
-if(mysqli_num_rows($result) > 0){
-    ?>
-    <h1>Wynik</h1>
+?>
+<table>
+    <tr>
+            <th>
+                Nr_transakcji
+            </th>
+            <th>
+                Data_wypozyczenia
+            </th>
+            <th>
+                Data_zwrócenia
+            </th>
+            <th>
+                Liczba dni
+            </th>
+    </tr>
     <?php
-    while($row = mysqli_fetch_assoc($result)){
-        
-    }   
-}   
+    if(mysqli_num_rows($result) > 0){
+        while($row = mysqli_fetch_assoc($result)){
+            ?>
+            <tr>
+                <td><?=$row['Nr_transakcji']?></td>
+                <td><?=$row['Data_wypozyczenia']?></td>
+                <td><?=$row['Data_zwrotu']?></td>
+                <td><?=$row['DNI']?></td>
+            </tr>
+            <?php
+        }   
+    }  
+    ?>
+</table>
+ 
 
+<?php
 $conn->close();
 ?>
 </body>
