@@ -5,20 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="style.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
 </head>
+<style>
+    table,tr,td,th{
+        border: 1px black solid;
+        border-collapse: collapse;
+    }
+</style>
 <body>
     <div class="row">
     <div class="column left">
         <a href="index.php?page=glowna">Strona główna</a>
         <a href="index.php?page=czytelnicy">Tabela czytelnicy</a>
-        <a href="index.php?page=Czytelnicy">Tabela działy</a>
-        <a href="index.php?page=Czytelnicy">Tabela działy2</a>
-        <a href="index.php?page=Czytelnicy">Tabela książki</a>
-        <a href="index.php?page=Czytelnicy">Tabela pracownicy</a>
-        <a href="index.php?page=Czytelnicy">Tabela stanowiska</a>
-        <a href="index.php?page=Czytelnicy">Tabela wypożyczenia</a>
-        
+        <a href="index.php?page=dzialy">Tabela działy</a>
+        <a href="index.php?page=dzialy2">Tabela działy2</a>
+        <a href="index.php?page=ksiazki">Tabela książki</a>
+        <a href="index.php?page=pracownicy">Tabela pracownicy</a>
+        <a href="index.php?page=stanowiska">Tabela stanowiska</a>
+        <a href="index.php?page=wypozyczalnia">Tabela wypożyczenia</a>   
     </div>
     <div class="column right">
         <?php
@@ -32,8 +42,6 @@
             include 'pages/glowna.php';
             }
         ?>
-        
-    </div>
     </div>
 </body>
 </html>
