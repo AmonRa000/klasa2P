@@ -1,6 +1,6 @@
 <h1>Tabela Czytelnicy</h1>
 <?php
-include "db_connect.php";
+include "db/db_connect.php";
 
 $query = "SELECT * FROM wypozyczenia";
 $result = mysqli_query($conn, $query);
