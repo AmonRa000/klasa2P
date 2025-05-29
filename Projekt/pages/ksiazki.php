@@ -2,7 +2,7 @@
 <?php
 include "db/db_connect.php";
 
-$query = "SELECT * FROM ksiazki";
+$query = "SELECT ksiazki.Sygnatura, ksiazki.Tytul, ksiazki.Nazwisko, ksiazki.Imie , ksiazki.Wydawnictwo, ksiazki.Miejsce_wyd ,ksiazki.Rok_wyd ,ksiazki.Objetosc_ks, ksiazki.Cena, dzialy.Nazwa FROM ksiazki INNER JOIN dzialy on ksiazki.id_dzial = dzialy.Id_dzial";
 $result = mysqli_query($conn, $query);
 ?>
 <table>
@@ -16,7 +16,7 @@ $result = mysqli_query($conn, $query);
         <th>Rok_wyd</th>
         <th>Objetosc_ks</th>
         <th>Cena</th>
-        <th>Id_dzial</th>
+        <th>Nazwa</th>
     </tr>
     <?php
     if(mysqli_num_rows($result) > 0){
@@ -31,8 +31,8 @@ $result = mysqli_query($conn, $query);
                 <td><?=$row['Miejsce_wyd']?></td>
                 <td><?=$row['Rok_wyd']?></td>
                 <td><?=$row['Objetosc_ks']?></td>
-                <td><?=$row['Cena']?></td>
-                <td><?=$row['Id_dzial']?></td>
+                <td><?=number_format($row['Cena'],2," zł ","")?>gr</td>
+                <td><?=$row['Nazwa']?></td>
             </tr>
             <?php
         }   

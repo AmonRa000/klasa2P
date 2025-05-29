@@ -1,12 +1,15 @@
+<?php
+    $aktywny=(isset($_GET['Page']) && $_GET['Page'] == "czytelnicy") ? 'aktywny':'';
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ppl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
-    <!--Fonts-->
+    <!--Czcionki-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -22,7 +25,7 @@
     <div class="row">
     <div class="column left">
         <a href="index.php?page=glowna">Strona główna</a>
-        <a href="index.php?page=czytelnicy">Tabela czytelnicy</a>
+        <a href="index.php?page=czytelnicy" class="<?=$aktywny?>">Tabela czytelnicy</a>
         <a href="index.php?page=dzialy">Tabela działy</a>
         <a href="index.php?page=dzialy2">Tabela działy2</a>
         <a href="index.php?page=ksiazki">Tabela książki</a>

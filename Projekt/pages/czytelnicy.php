@@ -23,20 +23,29 @@ $result = mysqli_query($conn, $query);
     <?php
     if(mysqli_num_rows($result) > 0){
         while($row = mysqli_fetch_assoc($result)){
-            ?>
+            $split = str_split($row['Kod'],2)?>
             <tr>
                 <td><?=$row['Nr_czytelnika']?></td>
                 <td><?=$row['Nazwisko']?></td>
                 <td><?=$row['Imie']?></td>
                 <td><?=$row['Data_ur']?></td>
                 <td><?=$row['Ulica']?></td>
-                <td><?=$row['Kod']?></td>
+                <td><?=$split[0].'-'.$split[1].$split[2]?></td>
                 <td><?=$row['Miasto']?></td>
                 <td><?=$row['Data_zapisania']?></td>
                 <td><?=$row['Data_skreslenia']?></td>
                 <td><?=$row['Nr_legitymacji']?></td>
                 <td><?=$row['Funkcja']?></td>
-                <td><?=$row['Plec']?></td>
+                <td>
+                    <?php
+                        if($row['Plec'] == 'K'){
+                            echo 'kobieta';
+                        }
+                        if($row['Plec'] == 'M'){
+                            echo 'mężczyzna';
+                        }
+                    ?>
+                </td>
             </tr>
             <?php
         }   
