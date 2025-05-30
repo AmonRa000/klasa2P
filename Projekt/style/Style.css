@@ -61,8 +61,9 @@ a:hover{
 a:active{
   background-color: rgb(43, 45, 105);
 }
-.aktywny{
-  background-color: black;
+.aktywny1, .aktywny2, .aktywny3, .aktywny4, .aktywny5, .aktywny6, .aktywny7, .aktywny8{
+  background-color: rgb(150, 169, 255);
+  color: black;
 }
 @media screen and (max-width:600px){
   .left{
