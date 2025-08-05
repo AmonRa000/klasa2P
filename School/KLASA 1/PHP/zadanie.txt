@@ -1,0 +1,21 @@
+Zadanie:
+
+Wymagania:
+
+Napisz formularz, za pomocą którego obliczysz koszt wejściówek na basen.
+Formularz ma zawierać trzy pola typu number: 
+ - ilość biletów normalnych, 
+ - ilość biletów ulgowych, 
+ - ilość godzin, 
+ - lista rozwijana (karta dużej rodziny)
+ - przycisk Oblicz.
+
+Do przeprowadzenia obliczeń przyjmij następujące założenia:
+- bilet normalny 15zł / godzina
+- bilet ulgowy 11zł / godzina
+- powyżej 4 godzin = bilet całodzienny: normalny 55zł, ulgowy 20zł
+karta dużej rodziny rabat 10%
+- na każde 10 biletów ulgowych jeden bilet normalny gratis
+Wynik obliczeń ma się wypisać  w innym pliku o nazwie obliczenia.php, po kliknięciu przycisk "oblicz".
+
+Całkowity koszt wstępu na basen to: cena zł.

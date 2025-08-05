@@ -1,0 +1,8 @@
+Napisz metodę:
+
+1. wyświetlającą dzielniki  liczby
+2. sprawdzającą czy podana liczba jest liczbą pierwszą
+3. sprawdzającą czy podana liczba jest liczbą doskonałą
+4. wyświetlającą czynniki pierwsze liczby
+5. obliczającą największy wspólny dzielnik
+6. wyświetlającą N elementów ciągu Fibonacciego

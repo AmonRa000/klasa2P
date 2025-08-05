@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<style>
+div.header-container{
+  display: block;
+}
+ul{
+  display: flex;
+  list-style-type: none;
+}
+header{
+  display: block;
+  box-sizing: border-box;
+}
+div.header{
+  display: block;
+  box-sizing: border-box;
+  height: 200px;
+  background-color: purple;
+}
+.nav-links{
+  display: block;
+  width: 200px;
+  text-decoration: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+div.header-flex-group__items{
+  display: flex;
+  margin-left: 100px;
+  margin-right: 150px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  padding-inline: 30px;
+  border: 2px solid green;
+  text-decoration: none;
+}
+.buttons:hover{
+  background-color: green;
+  color: white;
+  border: 1px solid black;
+  transition: 0.5s;
+}
+.buttons:active{
+  background-color: darkgreen;
+  transition: 0.5s;
+}
+</style>
+<body>
+    <div class="header-container">
+        <header>
+            <div class="header">
+              <div class="header-flex-group__items">
+                <a href="strona.html"><img src="zdjecia/Napoli Mia.png" alt="" height="200" width="200"></a>
+                <nav>
+                  <ul >
+                    <li><a href="menu.html" class="nav-links">Menu</a></li>
+                    <li><a href="" class="nav-links">Galeria</a></li>
+                    <li><a href="Dostawa.html" class="nav-links">Dostawa</a></li>
+                    <li><a href="" class="nav-links">Kontakt</a></li>
+                  </ul>
+                </nav>
+                <a href="Dostawa.html" class="buttons">Zamów online</a>
+              </div>
+            </div>
+        </header>
+      </div>
+</body>
+</html>

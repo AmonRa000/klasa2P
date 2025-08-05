@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 5px;
+}
+body{
+    font-family: Helvetica;
+}
+#banner{
+
+
+}
+.formularz{    
+    width: 60%;
+border: solid 1px red;
+padding: 10px;
+border-radius: 10px;
+margin: 0 auto;
+background-color:  orange;
+text-align: center;
+}
+przycisk
+#stopka{
+
+}

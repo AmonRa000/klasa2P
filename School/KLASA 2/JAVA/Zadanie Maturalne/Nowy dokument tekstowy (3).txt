@@ -1,0 +1,80 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package matura;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+/**
+ *
+ * @author p23welikp
+ */
+public class Matura {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) throws FileNotFoundException {
+        File plik = new File("liczby.txt");
+        Scanner in = new Scanner(plik);
+        int iloscLiczb = 0;
+        while(in.hasNext()) {
+            int ilosc0 = 0;
+            int ilosc1 = 0;
+            String linijka = in.next();
+            for(int i = 0; i<linijka.length(); i++) {
+                if(linijka.charAt(i) == '0') {
+                    ilosc0++;
+                } else if(linijka.charAt(i) == '1') {
+                    ilosc1++;
+                }
+                
+            }
+            if(ilosc0>ilosc1) {
+                    iloscLiczb++;
+                }
+        }
+        System.out.println(iloscLiczb);
+        
+        in = new Scanner(plik);
+        int podzielne2 = 0;
+        int podzielne8 = 0;
+        while(in.hasNext()) {
+            String linijka = in.next();
+            if(linijka.charAt(linijka.length()-1) == '0') {
+                podzielne2++;
+                if(linijka.charAt(linijka.length()-2) == '0' && linijka.charAt(linijka.length()-3) == '0') {
+                    podzielne8++;
+                }
+            }
+        }
+        System.out.println(podzielne2);
+        System.out.println(podzielne8);
+        
+        
+        
+        in = new Scanner(plik);
+        String najmniejsza = "";
+        String najwieksza = "";
+        int linijka = 0;
+        int linijkaNajwieksza = 1;
+        int linijkaNajmniejsza = 1;
+        while(in.hasNext()) {
+            String lin = in.next();
+            if(linijka==0) {
+                najmniejsza = lin;
+                najwieksza = lin;
+                linijka ++;
+                continue;
+            }
+            najmniejsza = Math.max(najwieksza.length(), lin.length());
+            linijka ++;
+            
+        }
+        
+    }
+    
+}

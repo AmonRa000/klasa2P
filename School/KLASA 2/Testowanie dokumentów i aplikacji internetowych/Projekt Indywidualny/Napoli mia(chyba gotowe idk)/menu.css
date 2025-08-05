@@ -1,0 +1,152 @@
+html,body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    user-select: none;
+}
+::-webkit-scrollbar{
+    width: auto;
+}
+::-webkit-scrollbar-track{
+    background: rgb(18 18 18);
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(66, 66, 66);
+    border-radius: 10px;
+  }
+/*  Fonts   */
+.poetsen-one-regular {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.special-gothic-regular {
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+/*      Navigation header      */
+.header-flex-group__items ul{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+div.header-container{
+    display: block;
+}
+header{
+    display: block;
+    box-sizing: border-box;
+}
+div.header{
+    display: block;
+    box-sizing: border-box;
+    height: 200px;
+}
+div.header-flex-group__items{
+    display: flex;
+    margin-left: 100px;
+    margin-right: 150px;
+    justify-content: space-between;
+    align-items: center;
+}
+/*      Navigation header links      */
+.nav-links{
+    display: block;
+    width: 200px;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+  a.nav-links{
+    font-size: 20px;  
+    color: #cc3404;
+    position: relative;
+    cursor: pointer;
+  }
+  a.nav-links::after{
+    position: absolute;
+    margin-left: 44%;
+    content: "";
+    bottom: -5px;
+    height: 1px;
+    width: 25px;
+    left: 0;
+    background-color: #272727;
+    transition: 0.3s;
+    transition-timing-function:ease-in-out;
+    transform: scaleX(0);
+  }
+  a.nav-links:hover::after{
+    transform: scaleX(3);
+  }
+
+  
+/*      MENU      */
+.menu-wrapper{
+  display: flex;
+  max-height: 2700px; 
+  min-height: 1300px;
+  gap: 40px;
+  color: rgb(200, 200, 200);
+  background-color: rgb(18 18 18);
+  justify-content: center; 
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu-column h3{
+  text-align: center;
+}
+
+.menu-item {
+  color: rgb(200, 200, 200);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid rgb(66, 66, 66);
+  padding: 12px 0;
+}
+
+.item-info b {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 4px;
+}
+
+.item-info p {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.item-price {
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+/*      Buttons    */
+.buttons{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    padding-inline: 30px;
+    border: 2px solid green;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 0.9s;
+}
+.buttons:hover{
+    background-color: green;
+    color: white;
+    border: 2px solid black;
+}
+.buttons:active{
+    background-color: darkgreen;
+    transition: 0.5s;
+}

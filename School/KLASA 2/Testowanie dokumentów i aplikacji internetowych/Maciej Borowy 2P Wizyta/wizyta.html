@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umów sie na wizytę!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="formularz">
+        <h1>Umów wizyte u lekarza</h1>
+        <form action="'#" method="post">
+            <div id="dane">
+                <h2>Dane pacjenta</h2>
+                <label for="imie">Imię</label>
+            <br>
+                <input type="text" id="imie" name="imie" placeholder="Wpisz imię" required>
+            <br>
+                <label for="nazwisko">Nazwisko</label>
+            <br>
+                <input type="text" id="nazwisko" name="nazwisko" placeholder="Wpisz nazwisko" required>
+            <br>
+                <label for="pesel">Pesel</label>
+            <br>
+                <input type="text" id="pesel" name="pesel" placeholder="Wpisz pesel" size="11" required>
+            <br>
+                <label for="email">Email</label>
+            <br>
+                <input type="email" id="email" name="email" placeholder="Wpisz email" required>
+            <br>
+                <label for="nr_tel">Numer Telefonu</label>
+            <br>
+                <input type="tel" id="nr_tel" name="nr_tel" placeholder="Wpisz numer telefonu" required>
+            <br>
+                <label for="ul">Ulica</label>
+            <br>
+                <input type="text" id="ul" name="ul" placeholder="Wpisz ulice" required>
+            <br>
+                <label for="nr_domu">Numer Domu</label>
+            <br>
+                <input type="text" id="nr_domu" name="nr_domu" placeholder="nr_domu" required>
+            <br>
+                <label for="nr_mieszkania">Numer Mieszkania</label>
+            <br>
+                <input type="text" id="nr_mieszkania" name="nr_mieszkania" placeholder="nr_mieszkania" required>
+            <br>
+                <label for="kod_pocz">Kod Pocztowy</label>
+            <br>
+                <input type="text" id="kod_pocz" name="kod_pocz" placeholder="kod_pocz" required>
+            <br>
+                <label for="miasto">Miasto</label>
+                <br>
+                <input type="text" id="miasto" name="miasto" placeholder="miasto" required>
+            </div>
+            <div id="wizyta">
+                <label for="lekarz">Lekarz</label>
+                <select name="lekarz" id="lekarz">
+                    <option value="kar">Kardiolog</option>
+                    <option value="rodz">Lekarz Rodzinny</option>
+                    <option value="oku">Okulista</option>
+                    <option value="ort">Ortopeda</option>
+                    <option value="gin">Ginekolog</option>
+                  </select>
+            <br>
+            <br>
+                  <label for="data">Data Wizyty</label>
+                  <input type="datetime-local" id="data" name="data" required>
+                  <br>
+                  <label for="uwagi">Uwagi</label>
+                  <textarea id="uwagi" name="uwagi" placeholder="uwagi" required>Uwagi</textarea>
+            </div>
+            <input type="submit" value="Umów wizytę">
+
+        </form>
+
+    </div>
+
+
+
+
+
+</body>
+</html>

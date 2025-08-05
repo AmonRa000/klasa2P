@@ -1,4 +1,0 @@
-2025-02-28 19:43:35
-{"Termin":["Termin 1"],"rok_miesiac_1":"2025-07","rok_miesiac_2":"","rok_miesiac_3":"","rok_miesiac_4":"","rok_miesiac_5":""}2025-02-28 19:44:23
-{"Termin":["Termin 1"],"rok_miesiac_1":"2025-07","rok_miesiac_2":"","rok_miesiac_3":"","rok_miesiac_4":"","rok_miesiac_5":""}2025-02-28 19:44:37
-{"Termin":["Termin 1"],"rok_miesiac_1":"2025-07","rok_miesiac_2":"","rok_miesiac_3":"","rok_miesiac_4":"","rok_miesiac_5":""}

@@ -1,0 +1,20 @@
+Minimum maksimum zbioru liczb
+
+Minimum jest to najmniejsza liczba ze zbioru liczb, natomiast maksimum jest to największa liczba ze zbioru liczb.
+
+Napisz program, który:
+- w komentarzu podana jest nazwa programu
+- pobiera od użytkownika liczby aż do wprowadzenia liczby 0
+- szuka liczby najmniejszej i największej
+- informuje użytkownika o wyniku obliczeń
+- pyta użytkownika czy powtórzyć obliczenia (wybranie na klawiaturze T lub t powoduje powtórzenie obliczeń)
+
+Ocenie podlega poprawna implementacja algorytmu.
+
+Projekt nazwij swoim loginem szkolnym.
+
+Po napisaniu programu należy wyeksportować projekt do archiwum ZIP za pomocą File->Export Project->To ZIP
+
+Na adres mazurs@zsi.kielce.pl wysyłamy archiwum projektu
+
+Wiadomość wysyłamy za pomocą strony internetowej poczta.zsi.kielce.pl

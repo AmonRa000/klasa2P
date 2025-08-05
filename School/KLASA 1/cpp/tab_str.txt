@@ -1,0 +1,64 @@
+Zad.1
+Zdefiniuj strukturê do przechowywania danych samochodu takich jak:
+marka, string
+rok produkcji, int
+pojemnoœæ silnika double
+Utwórz 3 obiekty tej struktury.
+Wyswietl dane tych 3 obiektów, jedna linijka pod drug¹.
+Wyswietl dane samochodu o najmniejszej pojemnoœci.
+Wyswietl dane samochodów których marka zaczyna siê na literê A lub B. 
+Zad. 2
+Zdefiniowaæ strukturê reprezentuj¹c¹ prostok¹t. 
+Utworzyæ tablicê 3 prostok¹tów. 
+Przypisaæ im odpowiednio wymiary 2.6x2, 1.12x5.5, 2.5x1.5. 
+Nastêpnie wewn¹trz pêtli wyznaczyæ pole ka¿dego prostok¹ta i wpisaæ do odpowiedniego pola struktury (struktura powinna posiadaæ zmienne a, b, oraz pole).
+Wyswietl sumê wszystkich 3 pól powierzchni.
+Zad. 3
+Utwórz tablicê liczba[] 15-to elementow¹.
+W pêtli wczytaj do niej liczby losowe z przedzia³u <12,34>
+Wyœwietl liczby z tablicy w jednej linii oddzielone spacjami.
+Wyœwietl ile razy w tablicy wyst¹pi³a liczba 20.
+Zad. 4
+ZnajdŸ max liczbê w tablicy z zad. 3 
+i wyœwietl wszystkie jej dzielniki, np.:
+liczba = 28
+1 2 4 7 14 28
+
+
+Zad.1
+Zdefiniuj strukturê do przechowywania danych samochodu takich jak:
+autor, string
+rok wydania, int
+cena ksi¹¿ki double
+Utwórz 3 obiekty tej struktury.
+Wyswietl dane tych 3 obiektów, jedna linijka pod drug¹.
+Wyswietl dane najstarszej ksi¹¿ki.
+Wyswietl dane ksi¹¿ek, których autor zaczyna siê na literê M lub N.
+Zad. 2
+Zdefiniowaæ strukturê reprezentuj¹c¹ prostok¹t. 
+Utworzyæ tablicê 3 prostok¹tów. 
+Przypisaæ im odpowiednio wymiary 2.3x2, 1x5.7, 2.5x1.5. 
+Nastêpnie wewn¹trz pêtli wyznaczyæ obwód ka¿dego prostok¹ta i wpisaæ do odpowiedniego pola struktury (struktura powinna posiadaæ zmienne a, b, oraz obwod).
+Wyswietl najmniejszy obwód.
+Zad. 3
+Utwórz tablicê imie[] 5-cio elementow¹.
+W dowolny sposób umieœæ w tablicy 5 imion.
+Wyœwietl imiona z tablicy w jednej linii oddzielone spacjami.
+Wykonaj takie losowanie liczb losowych aby mo¿na by³o
+wyœwietliæ dwa imiona z tej tablicy. Wyswietl te imiona.
+Zad.4
+Z imion z zad.3 wyswietl wspólne litery lub "brak"
+gdy wspólnych liter brak.
+Np.
+Janek Bartek
+a e k
+ 
+
+
+
+
+
+
+
+
+

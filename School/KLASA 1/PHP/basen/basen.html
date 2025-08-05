@@ -1,0 +1,26 @@
+<!--Napisz formularz, za pomocą którego obliczysz koszt wejściówek na basen.
+Formularz ma zawierać trzy pola typu number: 
+ - ilość biletów normalnych, 
+ - ilość biletów ulgowych, 
+ - ilość godzin, 
+ - lista rozwijana (karta dużej rodziny)
+ - przycisk Oblicz.!-->
+<html>
+    <head>
+        <title>basen</title>
+    </head>
+    <body>
+        <h2>Basen</h2>
+        <form action="basen.php" method="post">
+            bilet normalny: 15 zl godzina <input type="number" name="normalny"><br>
+            bilet uglowy: 11 zl godzina <input type="number" name="ulgowy"><br>
+            ilosc godzin: <input type="number" name="godziny"><br>
+            Karta duzej rodziny<select name="karta" id="karta">
+                <option value="Tak">Tak</option>
+                <option value="Nie">Nie</option>
+            </select>
+        <input type="submit" value="Przejdz do zaplaty"/>
+        </form>
+    </body>
+</html>
+ 

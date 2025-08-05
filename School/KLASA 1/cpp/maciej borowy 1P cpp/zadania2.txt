@@ -1,0 +1,28 @@
+Zad.1
+Wczytaj wartoœæ liczby naturalnej nieparzystej. Oblicz i wypisz wartoœæ sumy kolejnych czterech liczb nieparzystych, z których dana liczba jest najwiêksza.
+Np. input:9
+output:24
+
+Zad. 2
+Mia³eœ 104.6 metra siatki(siatka=104.6). Ogrodzi³eœ dzia³kê o kszta³cie prostok¹ta o bokach a = 16.7, b=24.9. Ponadto trochê siatki zmarnowa³eœ (zniszczy³eœ) strata=22.4. W ogrodzeniu jest brama=3.5.  Ile metrów siatki Ci zosta³o lub zabrak³o lub starczy³o w sam raz?
+Dane pobierz od u¿ytkownika za pomoc¹ cin (oprócz d³ugoœci siatki i bramy).
+Zad. 3
+Wczytaj dwie liczby parzyste:
+szer - szerokoœæ prostok¹ta
+wys - wysokoœæ prostok¹ta
+Wyœwietl taki prostok¹t np. dla szer=10 wys=6
+
+++++++++++
+++++++++++
+++++++++++
++++++*****
++++++*****
++++++*****
+
+Zad. 4
+Wyœwietl w pêtli od 1 do 15 nastêpuj¹cy tekst:
+10-2*3=4
+20-3*4=8
+30-4*5=10
+...
+150-16*17=-122

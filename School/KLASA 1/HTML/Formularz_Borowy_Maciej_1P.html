@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz rejestracyjny</title>
+</head>
+<body>
+    <form action="mailto:adres_e-mail.com" method="post">
+    <h2>Formularz rejestracyjny</h2>
+    <hr>
+    <p>
+        Podaj rok szkolny:<input type="number"><br><br>
+        <input type="text" name="imię" value="Podaj imię" size="30"><br>
+        <input type="text" name="nazwisko" value="Podaj Nazwisko" size="40"><br>
+        Podaj datę urodznia:<input type="date"><br>
+        Podaj Pesel: <input type="text" maxlength="11" size="7"><br>
+        Podaj adres e-mail:<input type="email" name="emali"> <br><br>
+        <!--specyficzne trudności-->
+        Zaznacz trudności z którymi się zmagasz: <br>
+        <input type="checkbox" name="zgoda">dysleksja <br>
+        <input type="checkbox" name="zgoda">dysgrafia <br>
+        <input type="checkbox" name="zgoda">dysortografia <br>
+        <input type="checkbox" name="zgoda">dyskalkulia <br><br>
+        <!--klasy-->
+        Zaznacz klasę w której jesteś: <br>
+        <input type="radio" value="AB" name="klasa">AB <br>
+        <input type="radio" value="C" name="klasa">C <br>
+        <input type="radio" value="D" name="klasa">D <br>
+        <input type="radio" value="E" name="klasa">E <br>
+        <input type="radio" value="F" name="klasa">F <br>
+        <input type="radio" value="P" name="klasa">P <br>
+        <input type="radio" value="R" name="klasa">R <br><br>
+        <!--przedmioty maturalne-->
+        Zaznacz przedmioty maturalne makasymalnie 5: <br>
+        Aby zaznaczyć więcej niż jeden przytrzmaj CTRL <br>
+        <select name="przedmioty" size="7" multiple>
+            <option>biologia</option>
+            <option>chemia</option>
+            <option>filozofia</option>
+            <option>fizyka</option>
+            <option>geografia</option>
+            <option>historia</option>
+            <option>historia muzyki</option>
+            <option>historia sztuki</option>
+            <option>informatyka</option>
+            <option>język łaciński i kultura antyczna</option>
+            <option>język mniejszości etnicznej</option>
+            <option>język mniejszości narodowej</option>
+            <option>język polski</option>
+            <option>język regionalny</option>
+            <option>matematyka</option>
+            <option>wiedza o społeczeństwie</option>
+        </select>
+        <br>
+        <textarea name="uwagi" cols="20" rows="5" maxlength="150">Uwagi</textarea> <br>
+        <button type="submit" name="przycisk1">prześlij formularz</button> 
+        <button type="reset" name="przycisk2">Wyczyść</button><br>
+        <input type="checkbox" name="zgoda"> <i>Wyrażam zgodę na przetwarzanie moich danych osobowych</i>
+    </p>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+Na podstawie ćwiczenia 1 i 2 wyświetli przykładowy samochód (marka , model) oraz obliczyć jego spalanie na 100 Km.
+Dwie właściwości publiczne: marka, model.
+Klasa o nazwie Samochod, zdefinij trzy motody (ustawMarke), (stawModel), (ustawSpalanie) oraz przypisz odpowiednie wartości.
+Zdefiniuj metodę obliczKosztPaliwa($obiekt,$dystans,$cenaPaliwa), która obliczy i zwróci koszt zużytego paliwa na podstawie dystansu 100(km)
+oraz ceny paliwa w (litrach).Zdefiniuj metodę wyswietlInformacje, która wyświetli informacje o samochodzie i wyświetli na ekranie
+Samochód: Marka, Model , spalanie  w litrach.

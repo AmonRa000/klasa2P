@@ -1,0 +1,94 @@
+<html>
+    <body>
+        <form action="mailto:adres_e-mail.com" method="post">
+        <h4> Formularz kontaktowy </h4>
+
+        <p>
+            Podaj swoje imię:<input type="text" name="imię" value="" size="30">
+            Podaj swoje nazwisko:<input type="text" name="nazwisko" value="" size="40">
+            Podaj hasło: <input type="password" name="hasło" size="30">
+            <input type="checkbox" name="zgoda">Zgadzam się na przetwarzanie moich danych
+        </p>
+
+        <p><input type="reset" value="Wyczyść Formularz"></p>
+
+        <h4>Zaznacz swój ulubiony kolor</h4>
+
+        <p>
+            <input type="checkbox" name="zgoda">niebieski<br>
+            <input type="checkbox" name="zgoda">czerwony<br>
+            <input type="checkbox" name="zgoda">żółty<br>
+            <input type="checkbox" name="zgoda">zielony<br>
+        </p>
+
+        <h3>Wykszatałcenie</h3>
+
+        <p>
+            <input type="radio" value="podstawowe" name="grupa_opcji">Podstawowe <br>
+            <input type="radio" value="srednie" name="grupa_opcji">Średnie <br>
+            <input type="radio" value="wyższe" name="grupa_opcji">Wyższe <br>
+        </p>
+
+        <hr>
+
+        <h3>W której klasie jesteś?</h3>
+
+    
+        <p>
+
+            <input type="radio" value="1AB" name="klasy">1AB <br>
+            <input type="radio" value="C" name="klasy">1C <br>
+            <input type="radio" value="D" name="klasy">1D <br>
+            <input type="radio" value="E" name="klasy">1E <br>
+            <input type="radio" value="F" name="klasy">1F <br>
+            <input type="radio" value="P" name="klasy">1P <br>
+            <input type="radio" value="R" name="klasy">1R <br>
+        </p>
+
+        <h3>Aby zaznaczyć więcej odpowiedzi porzytrzymaj CRTL</h3>
+
+        <select name="lista" size="6" multiple>
+            <option>Pierwsza Odpowiedź</option>
+            <option>Druga Odpowiedź</option>
+            <option>Trzecia Odpowiedź</option>
+            <option>Czawarta Odpowiedź</option>
+            <option>Piąta Odpowiedź</option>
+            <option>Szósta Odpowiedź</option>
+        </select>
+
+        <h3>Formularz wyboru języka</h3>
+        <select name="Formularz wyboru języka" size="7">
+            <option>j.Polski</option>
+            <option>j.Angielski</option>
+            <option>j.Francuski</option>
+            <option>j.Rosyjski</option>
+            <option>j.Włoski</option>
+            <option>j.Niemiecki</option>
+            <option>j.Hiszpański</option>
+        </select>
+
+        <h3>Życiorys</h3>
+        <textarea name="Życiorys" cols="10" rows="8" maxlength="100" >Wprowadź swój tekst-maksymalnie 250 znaków</textarea>
+
+        <p>Wybierz kolor z palety kolorów</p>
+        <input type="color" name="kolor" value="255,255,255">
+        <button type="submit" name="przycisk1" style="font:12px Arial; background:red">Wyślij</button>
+        <button type="reset" name="przycisk2"><img src="kosz.jpg" alt="Formularz"></button>
+        <button type="button" name="przcisk3">Powrót</button>
+
+        <p>Podaj datę urodznia</p>
+        <input type="date" name="data">
+        <input type="submit" value="wyślij">
+
+        <p>Podaj adres e-mail</p>
+        <input type="email" name="emali">
+        
+
+
+
+
+
+
+        </form>
+    </body>
+</html>

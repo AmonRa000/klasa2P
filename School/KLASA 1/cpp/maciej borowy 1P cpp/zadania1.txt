@@ -1,0 +1,29 @@
+Zad.1
+Wczytaj wartość liczby naturalnej parzystej. Oblicz i wypisz wartość sumy kolejnych czterech liczb parzystych, z których dana liczba jest najmniejsza.
+Np. input:2
+output:20
+
+Zad.2
+Wychodząc z domu miałeś w portfelu 278.40 zł(wallet=278.4). Poszedłeś do sklepu i kupiłeś pewną ilość jabłek (nie są to całe kilogramy, np. waga=2.4) w jakiejś cenie np. cena=2.56. Po drodze pożyczyłeś koledze jakąś kwotę złotych np. poz=5.5. Ile pieniędzy Ci zostało gdy wróciłeś do domu albo ile Ci zabrakło albo starczyło w sam raz?
+Dane pobierz od użytkownika za pomocą cin (oprócz kwoty w portfelu).
+
+Zad. 3
+Wczytaj dwie liczby parzyste:
+szer - szerokość prostokąta
+wys - wysokość prostokąta
+Wyświetl taki prostokąt np. dla szer=10 wys=6
+
+++++++++++
+++++++++++
+++++++++++
+*****+++++
+*****+++++
+*****+++++
+
+Zad. 4
+Wyświetl w pętli od 1 do 15 następujący tekst:
+1*(2+3)=5
+2*(3+4)=14
+3*(4+5)=27
+...
+15*(16+17)=495
